@@ -20,24 +20,24 @@ finance_assistant/ │ ├── data_ingestion/ │ ├── api_agent.py # Fe
    cd finance_assistant
 
 
-#Create a Virtual Environment:
+# Create a Virtual Environment:
 
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-#Install Dependencies:
+# Install Dependencies:
 pip install -r requirements.txt
 
-#Run the FastAPI Server:
+# Run the FastAPI Server:
 uvicorn orchestrator.orchestrator:app --reload
 
-#Run the Streamlit App:
+# Run the Streamlit App:
 streamlit run streamlit_app/app.py
 
-#Access the Application:
+# Access the Application:
 Open your web browser and go to http://localhost:8501 to access the Streamlit app.
 
-#Usage
+# Usage
 Upload an Audio File: Use the file uploader in the Streamlit app to upload an audio file containing your finance-related question.
 
 Get Market Brief: Click the "Get Market Brief" button to process the audio input and receive a spoken market brief in response.
@@ -46,13 +46,13 @@ Audio Playback: The generated market brief will be played back to you as audio.
 
 
 
-#AI Tool Usage Log
+# AI Tool Usage Log
 LangChain: For language model integration.
 FAISS: For efficient similarity search.
 gTTS: For text-to-speech conversion.
 Whisper: For speech-to-text conversion.
 
-#Code Generation Steps
+# Code Generation Steps
 Implemented API agent to fetch market data.
 Developed scraping agent for financial filings.
 Created retriever agent for indexing and retrieval.
@@ -61,11 +61,11 @@ Developed voice agent for STT and TTS.
 Orchestrated agents using FastAPI.
 Built Streamlit app for user interaction.
 
-#Deployment
+# Deployment
 The application can be deployed on cloud platforms  Streamlit Sharing, Ensure to configure the environment variables and API keys as needed.
 
-#License
+# License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-#Acknowledgments
+# Acknowledgments
 Special thanks to the developers of the libraries and tools used in this project, including FastAPI, Streamlit, LangChain, and others.
